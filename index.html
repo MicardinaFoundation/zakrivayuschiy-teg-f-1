@@ -22,30 +22,6 @@
     <header class="content header">
       <a href="#" class="header__title">&lt;/html&gt;</a>
       <h1 class="header__description">закрывающий тег</h1>
-      <nav class="theme-menu header__theme-menu">
-        <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
-        <ul class="theme-menu__list">
-          <li class="theme-menu__item">
-            <button type="button" data-theme="dark" class="theme-menu__button">
-              Темно
-            </button>
-          </li>
-          <li class="theme-menu__item">
-            <button
-              type="button"
-              data-theme="auto"
-              disabled
-              class="theme-menu__button"
-            >
-              Авто
-            </button>
-          </li>
-          <li class="theme-menu__item">
-            <button type="button" data-theme="light" class="theme-menu__button">
-              Светло
-            </button>
-          </li>
-        </ul>
       </nav>
     </header>
     <main class="content main">
@@ -76,7 +52,7 @@
               </g>
               </svg>
             </button>
-            <button type="button" class="card__like-button">
+            <button type="button" class="card__like-button button-focus_shadow outline_none">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -111,7 +87,7 @@
               </g>
               </svg>
             </button>
-            <button type="button" class="card__like-button">
+            <button type="button" class="card__like-button button-focus_shadow outline_none">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -145,7 +121,7 @@
               </g>
               </svg>
             </button>
-            <button type="button" class="card__like-button">
+            <button type="button" class="card__like-button button-focus_shadow outline_none">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -180,7 +156,7 @@
               </g>
               </svg>
             </button>
-            <button type="button" class="card__like-button">
+            <button type="button" class="card__like-button button-focus_shadow outline_none">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -213,7 +189,7 @@
               </g>
               </svg>
             </button>
-            <button type="button" class="card__like-button">
+            <button type="button" class="card__like-button button-focus_shadow outline_none">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -246,7 +222,7 @@
               </g>
               </svg>
             </button>
-            <button type="button" class="card__like-button">
+            <button type="button" class="card__like-button button-focus_shadow outline_none">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -280,7 +256,7 @@
                 </g>
               </svg>
             </button>
-            <button type="button" class="card__like-button">
+            <button type="button" class="card__like-button button-focus_shadow outline_none">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -315,7 +291,7 @@
               </g>
               </svg>
             </button>
-            <button type="button" class="card__like-button">
+            <button type="button" class="card__like-button button-focus_shadow outline_none">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -323,7 +299,7 @@
       </article>
 
       <div class="button">
-        <button type="button" class="button-remember" onclick="window['dialog-id'].showModal()" aria-controls="dialog-id">
+        <button type="button" class="button-remember button-focus_shadow outline_none" onclick="window['dialog-id'].showModal()" aria-controls="dialog-id">
           <svg class="floppy" viewbox="0 0 39 39">
             <use href="./svg/floppy.svg#floppy"/>
           </svg>
@@ -335,9 +311,9 @@
           <svg class="floppy-dialog" viewbox="0 0 39 39">
             <use href="./svg/floppy.svg#floppy"/>
           </svg>
-          <span class="dialog__flex-text">Вставьте дискету, чтобы продолжить</span>
+          <p class="dialog__flex-text">Вставьте дискету, чтобы продолжить</p>
         </div>
-          <button type="button" class="button-save" onclick="window['dialog-id'].close()">
+          <button type="button" class="button-save button-focus_shadow outline_none" onclick="window['dialog-id'].close()">
             <span class="button-save-text">ок</span>
           </button>
         </dialog>

@@ -1,8 +1,6 @@
 /* Опишите в этом файле все keyframes для проекта и стили анимаций иконки Like.
 
 Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
-✦ theme-dark — класс тёмной темы
-✦ theme-light — класс светлой темы
 ✦ like-icon — для svg-иконки анимированного сердца
 ✦ card__like-button — для кнопки Like рядом с иконкой
 ✦ card__icon-button — для кнопки, оборачивающей иконку
@@ -12,43 +10,6 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
-
-.theme-menu__button:disabled::before {
-    content: '▶';
-    position: absolute;
-    animation: path 0.5s ease-in-out infinite alternate;
-    top: 0;
-    left: 0;
-  }
-  
-  .theme-menu__button:focus-visible {
-    opacity: 0.6;
-    transition: opacity 0.3s ease;
-  }
-  
-  .theme-menu__button::after {
-    display: block;
-    content: '';
-    width: 0;
-    height: 2px;
-    background-color: var(--accent-color);
-    transition: width .3s;
-  }
-  
-  .theme-menu__button:focus-visible::after {
-    width: 100%;
-  }
-  
-  .theme-menu__button:hover, .theme-menu__button:disabled {
-    position: relative;
-    opacity: 0.6;
-    transition: opacity 300ms ease;
-  }
-  
-  .theme-menu__button:disabled {
-    pointer-events: none;
-  }
-  
   .like-icon {
     fill: var(--bg-color);
     inline-size: 39px;
@@ -68,29 +29,29 @@
   
   .card__icon-button:hover .main-body {
     fill: var(--accent-color);
-    transition: fill .5s 3ms;
+    transition: fill .3s 5ms;
   }
   
   .card__icon-button:active .main-body {
     fill: var(--heart-color);
-    transition: fill .3s 6ms;
+    transition: fill .3s 5ms;
   }
   
   .like-icon.is-liked .main-body {
     fill: var(--heart-color);
-    transition: fill .3s 3ms;
+    transition: fill .3s 5ms;
   }
   
   
   /* Плюс */
   .like-icon .core {
     fill: var(--bg-color);
-    transition: fill .3s 5ms;
+    transition: fill .3s 3ms;
   }
   
   .card__icon-button:hover .core {
     fill: var(--accent-color);
-    transition: fill .3s 3ms;
+    transition: fill .3s;
   }
   
   .card__icon-button:active .core {
@@ -106,11 +67,12 @@
   /* Контур */
   .like-icon .contour {
     fill: var(--accent-color);
+    transition: fill .1s;
   }
   
   .like-icon.is-liked .contour {
     fill: var(--heart-color);
-    transition: fill .3s 5ms;
+    transition: fill .3s 6ms;
   }
   
   

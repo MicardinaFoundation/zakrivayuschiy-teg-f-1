@@ -16,7 +16,6 @@
 
 @supports (-webkit-text-stroke: 1px #fff) or (text-stroke: 1px #fff) {
   .card__image-label {
-    text-stroke: 1px var(--stroke-color);
     -webkit-text-stroke: 1px var(--stroke-color);
     text-shadow: none;
   }
@@ -59,7 +58,7 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
-  padding: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem) 0 12px;
+  padding: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem) 0 138px;
 
   border: 2px solid var(--border-color);
   background-color: var(--bg-color);
@@ -112,6 +111,8 @@
 }
 
 .image {
+  object-fit: cover;
+  object-position: center center;
   display: block;
   width: 100%;
   height: 100%;
@@ -156,7 +157,6 @@
   color: var(--accent-color);
   opacity: 0.5;
   mix-blend-mode: hard-light;
-  -webkit-text-stroke: 1px var(--stroke-color);
   text-shadow: 0 var(--stroke-color), 0 1px var(--stroke-color),
     0 -1px var(--stroke-color), 1px 0 var(--stroke-color);
 }
@@ -210,10 +210,8 @@
   position: relative;
 }
 
-.card__like-button:focus-visible,
-.card__like-button:focus,
-.button-remember:focus-visible,
-.button-remember:focus {
+.outline_none:focus-visible,
+.outline_none:focus {
   outline: none;
 }
 
@@ -282,12 +280,11 @@
   position: relative;
 }
 
-.button-remember:focus-visible,
-.card__like-button:focus-visible,
-.button-save:focus-visible {
+.button-focus_shadow:focus-visible {
   box-shadow: 2px 2px 0 0px var(--border-color);
   transition: box-shadow 0.3s ease;
 }
+
 
 .button {
   display: flex;
@@ -327,15 +324,8 @@
   padding-inline-start: 27px;
 }
 
-.theme-menu__button:focus-visible,
-.theme-menu__button:focus,
-.button-save:focus,
-.button-save:focus-visible {
-  outline: none;
-}
-
 .dialog::backdrop {
-  background-color: rgba(0 0 0 / 0.8);
+  background-color: rgba(0 0 0 / 0.75);
 }
 
 .dialog {
