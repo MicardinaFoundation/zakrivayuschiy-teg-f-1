@@ -88,20 +88,20 @@
   }
   
   .like-icon.is-liked .sparks {
-    animation: sparks .3s ease;
+    animation: sparks .3s ease-in .3s;
   }
   
   .like-icon.is-liked .heart {
-    animation: scale .3s ease;
+    animation: scale .3s ease-in .1s;
   }
   
   @keyframes scale {
     from {
-      scale: 0;
+      scale: 1;
     }
   
     to {
-      scale: 1;
+      scale: 1.25;
     }
   }
   
